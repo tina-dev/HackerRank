@@ -1,5 +1,7 @@
 package net.tina.HackerRank.Algorithms.Implementation;
 
+import java.util.Scanner;
+
 public class P01_GradingStudents
 {
 

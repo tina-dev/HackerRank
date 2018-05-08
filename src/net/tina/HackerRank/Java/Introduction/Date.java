@@ -10,7 +10,7 @@ public class Date
 	{
 		Calendar calendar = Calendar.getInstance();
 		calendar.set(Integer.valueOf(day), Integer.valueOf(month)-1, Integer.valueOf(year));
-		return calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.getDefault()).toUpperCase();
+		return calendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG, Locale.GERMANY).toUpperCase();
 	}
 	public static void main(String [] args)
 	{

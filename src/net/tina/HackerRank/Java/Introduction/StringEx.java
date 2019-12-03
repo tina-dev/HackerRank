@@ -9,10 +9,10 @@ public class StringEx
         String myString = "Hacker";
         char[] myCharArray = myString.toCharArray();
         for(int i = 0; i < myString.length(); i++){
-            if(myString.charAt(i) % 2 == 0)
+           /* if(myString.charAt(i) % 2 == 0)
             {
                 System.out.print(myCharArray[i]);
-            }
+            }*/
             /*else
             {
                 System.out.println(myCharArray[i]);

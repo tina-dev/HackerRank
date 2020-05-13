@@ -5,5 +5,12 @@ public class StackImplementation {
     private int top;
     private int capacity;
 
+    StackImplementation(int capacity) {
+        this.arraay = new int[capacity];
+        this.capacity = capacity;
+        this.top = -1;
+
+    }
+
 
 }

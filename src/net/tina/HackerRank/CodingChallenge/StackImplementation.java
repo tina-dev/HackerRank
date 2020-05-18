@@ -11,6 +11,12 @@ public class StackImplementation {
         this.top = -1;
 
     }
+    public void push(int item) {
+
+    }
+    public int pop() {
+        return 0;
+    }
 
 
 }

@@ -17,7 +17,7 @@ public class MapInterface
         }
         while(in.hasNext())
         {
-            String s=in.nextLine();
+            String s = in.nextLine();
         }
     }
 }

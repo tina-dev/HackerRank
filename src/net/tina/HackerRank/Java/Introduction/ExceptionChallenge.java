@@ -8,13 +8,11 @@ public class ExceptionChallenge {
         String S = scanner.next();
 
         try{
-            int i = Integer.parseInt(S);
+            System.out.println(Integer.parseInt(S));
 
         } catch (NumberFormatException e) {
             System.out.println("Bad String");
         }
-        finally {
-            System.out.println(S);
-        }
+
     }
 }

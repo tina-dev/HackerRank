@@ -10,8 +10,8 @@ public class AbstractClasses {
         int price = scanner.nextInt();
         scanner.close();
 
-        Book book = new MyBook(title, author, price);
-        book.display();
+        //Book book = new MyBook(title, author, price);
+        //book.display();
     }
 
     abstract class Book {
@@ -26,7 +26,7 @@ public class AbstractClasses {
         abstract void display();
     }
 
-     static class MyBook extends Book {
+      class MyBook extends Book {
         int price;
 
         MyBook(String title, String author, int price) {
@@ -40,6 +40,4 @@ public class AbstractClasses {
          }
 
     }
-
-
 }

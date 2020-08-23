@@ -17,6 +17,4 @@ public class StackImplementation {
     public int pop() {
         return 0;
     }
-
-
 }

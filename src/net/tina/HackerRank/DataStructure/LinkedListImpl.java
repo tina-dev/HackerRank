@@ -88,6 +88,19 @@ public class LinkedListImpl {
         }
     }
 
+    public LinkedListImpl reverse(LinkedListImpl linkedList) {
+        LinkedListImpl newList = new LinkedListImpl(linkedList.head.value);
+        Node current = linkedList.head;
+        while (current.next != null) {
+            current = current.next;
+            Node newNode = new Node(current.value);;
+            newNode.next = newList.head;
+            newList.head = newNode;
+            newList.length++;
+        }
+        return newList;
+    }
+
 
 
 
@@ -101,7 +114,11 @@ public class LinkedListImpl {
         linkedList.append(8);
         linkedList.insert(2, 66);
         linkedList.remove(3);
-
         System.out.println(Arrays.toString(linkedList.printList()));
+
+        LinkedListImpl linkedList1 = linkedList.reverse(linkedList);
+        System.out.println("reverse LinkedList: " + Arrays.toString(linkedList1.printList()));
+
+
     }
 }
